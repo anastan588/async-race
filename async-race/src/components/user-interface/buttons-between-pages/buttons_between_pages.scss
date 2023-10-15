@@ -1,0 +1,33 @@
+$background_color1: #003e5b;
+$background_color2: #005280;
+$background_color3: #70c5ee;
+$background_color4: #bee5f7;
+$color_text1: #ffffff;
+$color_text2: #aaa;
+
+.buttons_container_pages {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    justify-content: flex-end;
+}
+
+.button_garage {
+    padding: 5px 10px;
+    background-color: $background_color3;
+    text-align: center;
+    border: 4px outset $background_color4;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    font-size: 90%;
+}
+
+.button_winners {
+    padding: 5px 10px;
+    background-color: $background_color3;
+    text-align: center;
+    border: 4px outset $background_color4;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    font-size: 90%;
+}

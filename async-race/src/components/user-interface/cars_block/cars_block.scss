@@ -1,0 +1,99 @@
+$background_color1: #003e5b;
+$background_color2: #005280;
+$background_color3: #70c5ee;
+$background_color4: #bee5f7;
+$color_text1: #ffffff;
+$color_text2: #aaa;
+
+.car_item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 80%;
+}
+
+.car_tools {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.select_button {
+    padding: 2px 10px;
+    background-color: $background_color3;
+    text-align: center;
+    border: 4px outset $background_color4;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    font-size: 90%;
+}
+
+.remove_button {
+    padding: 2px 10px;
+    background-color: $background_color3;
+    text-align: center;
+    border: 4px outset $background_color4;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    font-size: 90%;
+}
+
+.car_title {
+    font-size: 150%;
+}
+
+.car {
+    display: flex;
+    width: 100%;
+    gap: 15px;
+    padding-bottom: 5px;
+    border-bottom: 4px dotted $background_color4;
+}
+.car_control {
+    display: flex;
+    gap:5px;
+    align-items: flex-start;
+}
+
+.start_button {
+    padding: 2px 5px;
+    background-color: $background_color3;
+    text-align: center;
+    border: 4px outset $background_color4;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.stop_button {
+    padding: 2px 5px;
+    background-color: $background_color3;
+    text-align: center;
+    border: 4px outset $background_color4;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.car_image_container {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.car_image {
+    transition: all;
+}
+
+.flag_image {
+ position: absolute;
+ bottom: 0;
+ right: 14%;
+ height: 50px;
+}
+
+.car_drive_animation {
+ transform: translateX(0px);
+ transition-timing-function: ease;
+}
+
+
+

@@ -1,0 +1,41 @@
+$background_color1: #003e5b;
+$background_color2: #005280;
+$background_color3: #70c5ee;
+$background_color4: #bee5f7;
+$color_text1: #ffffff;
+$color_text2: #aaa;
+
+.game_control_container {
+    display: flex;
+    gap: 20px;
+}
+
+.race_button {
+    padding: 3px 17px;
+    background-color: $background_color3;
+    text-align: center;
+    border: 4px outset $background_color4;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    font-size: 90%;
+}
+
+.reset_button {
+    padding: 3px 17px;
+    background-color: $background_color3;
+    text-align: center;
+    border: 4px outset $background_color4;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    font-size: 90%;
+}
+
+.generate_cars_button {
+    padding: 3px 17px;
+    background-color: $background_color3;
+    text-align: center;
+    border: 4px outset $background_color4;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    font-size: 90%;
+}

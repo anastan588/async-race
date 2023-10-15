@@ -1,0 +1,48 @@
+$background_color1: #003e5b;
+$background_color2: #005280;
+$background_color3: #70c5ee;
+$background_color4: #bee5f7;
+$color_text1: #ffffff;
+$color_text2: #aaa;
+
+.winners_container {
+ display: flex;
+ flex-direction: column;
+ gap: 15px;
+ align-self: flex-start;
+}
+
+.winners_amount_in_garage {
+
+
+}
+
+
+.page_number {
+
+}
+
+
+.pangination_buttons_winners {
+    display: flex;
+    gap: 20px;
+}
+
+.prev_button_winners {
+    padding: 5px 10px;
+    background-color: $background_color3;
+    text-align: center;
+    border: 4px outset $background_color4;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.next_button_winners {
+
+    padding: 5px 10px;
+    background-color: $background_color3;
+    text-align: center;
+    border: 4px outset $background_color4;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}

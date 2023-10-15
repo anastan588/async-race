@@ -1,0 +1,244 @@
+@font-face {
+    font-family: 'Turbo';
+    src: url('./assets/fonts/Turbo.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+/*Normalize*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 16px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+/*--------------------*/
+
+.bigred {
+    font-size: 20px;
+    color: red;
+}
+
+/*Normalize*/
+
+/*mixins*/
+$font_toonish: 'Turbo', sans-serif;
+$background_color1: #003e5b;
+$background_color2: #005280;
+$background_color3: #70c5ee;
+$background_color4: #bee5f7;
+$color_text1: #ffffff;
+$color_text2: #aaa;
+/*mixins*/
+
+.main_container {
+    font-family: $font_toonish;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    color: $color_text1;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    font-size: 70%;
+}
+.header {
+    background-color: $background_color1;
+    color: $color_text1;
+    grid-template-columns: 95% 5%;
+    grid-template-rows: auto;
+    display: grid;
+    padding: 5px 10px;
+    width: 100%;
+    background-image: url(assets/icons/turbosnail1.png);
+    background-position: 40% 50%;
+    background-repeat: no-repeat;
+    background-size: 1%;
+}
+.title {
+    font-weight: bold;
+    font-size: 150%;
+    justify-self: center;
+    text-align: center;
+}
+@media screen and (max-width: 800px) {
+    .title {
+        font-size: 120%;
+    }
+}
+
+.main {
+    flex: 1 1 auto;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    background-color: $background_color2;
+    gap: 15px;
+    padding: 10px;
+    position: relative;
+    background-image: url(assets/icons/turbosnail2.png), url(assets/icons/turbosnail4.png), url(assets/icons/turbosnail7.png);
+    background-position: top right, bottom left, 30% 0%;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 15%, 15%, 15%;
+}
+
+.footer {
+    background-color: $background_color1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.github_link {
+    display: block;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.github_link:hover {
+    transform: scale(1.1);
+}
+.github_image {
+    max-height: 20px;
+}
+
+.rsschool_link {
+    display: block;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.rsschool_link:hover {
+    transform: scale(1.1);
+}
+
+.rsschool_image {
+    max-height: 20px;
+}
+
+
+.window_win {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    padding: 15px;
+    border: 4px outset $background_color4;
+    background-color: $background_color1;
+    z-index: 5;
+}
+.window_win_title {
+    font-weight: bold;
+}
+
+.window_win_ok {
+    padding: 10px;
+    text-align: center;
+    border: 2px outset $background_color4;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+
+.window_win_ok:hover {
+    transform: scale(1.1);
+}
+
+.display_none {
+    display: none;
+}
+
+

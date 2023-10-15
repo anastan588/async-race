@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "es2022",
+    "target": "es2022", 
+    "outDir": "dist",                                                    
+    "typeRoots": [ "node_modules/@types",
+    "custom_typings/"],                                       
+    "esModuleInterop": true,                                               
+    "forceConsistentCasingInFileNames": true,           
+    "strict": true,                                      
+    "noImplicitAny": true,                                               
+    "skipLibCheck": true                                 
+  }
+}
